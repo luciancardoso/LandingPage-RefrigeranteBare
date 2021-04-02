@@ -163,7 +163,8 @@ header ul li a {
 @media (max-width: 991px){
     section {
         padding: 40px;
-        margin-bottom: 140px;
+        margin-bottom: 1px;
+        min-height: 100vh;
     }
 
     header {
@@ -259,7 +260,11 @@ header ul li a {
     }
 
     .content .imgBox img {
-        max-width: 150px;
+        max-width: 330px;
+    }
+
+    .produto-info {
+        margin-bottom: 1px;
     }
 
     .produto-info li img {
