@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Baré - Landing Page</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section class="sec">
+        <header>
+            <a href="#"><img src="img/logo_bare.jpg" class="logo" alt="Logo Baré"></a>
+            <div class="toggleMenu" onclick="menuToggle();"></div>
+            <ul class="navigation">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Produtos</a></li>
+                <li><a href="#">Quem somos</a></li>
+                <li><a href="#">Notícias</a></li>
+                <li><a href="#">Contato</a></li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>Guaraná<br><span>Baré</span></h2>
+                <p>Lançado na década de 60 em Manaus, ainda é um dos refrigerantes mais consumidos no estado do Amazonas. Em 2010, atendendo a pedidos dos consumidores da região, a companhia lançou a embalagem em lata e alinhou a comunicação visual em todas as embalagens.</p>
+                <a href="#">Visualizar Produtos</a>
+            </div>
+            <div class="imgBox">
+                <img src="img/bare_2l.png" class="bare" alt="refrigerante Baré">
+            </div>
+        </div>
+        <div class="produto-info">
+            <li><img class="imagem-produto" src="img/PET_2l.png" onclick="visProd('img/bare_2l.png')" alt="refrigerante de 2 Litros">2L</li>
+            <li><img class="imagem-produto" src="img/garrafa_normal_600ml.png" onclick="visProd('img/bare_600ml.png')" alt="refrigerante de 600ml">600ml</li>
+            <li><img class="imagem-produto" src="img/lata_340_350ml-3.png" onclick="visProd('img/bare_350ml.png')" alt="refrigerante em lata de 350ml">350ml</li>
+        </div>
+        <div class="redes">
+            <li><a href="#"><img src="img/facebook.png" alt="Icone Facebook"></a></li>
+            <li><a href="#"><img src="img/twitter.png" alt="Icone Twitter"></a></li>
+            <li><a href="#"><img src="img/instagram.png" alt="Icone Instagram"></a></li>
+        </div>
+    </section>
+
+    <script type="text/javascript">
+        function visProd(anything){
+            document.querySelector('.bare').src = anything;
+        }
+        function menuToggle(){
+            const toggleMenu = document.querySelector('.toggleMenu');
+            const navigation = document.querySelector('.navigation');
+            toggleMenu.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+    </script>
+
+
+</body>
+</html>
